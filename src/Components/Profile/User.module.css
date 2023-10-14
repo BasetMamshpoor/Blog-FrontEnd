@@ -1,0 +1,110 @@
+.EzonU {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+.prVk {
+  max-width: 100%;
+  position: sticky;
+  top: 8rem;
+  z-index: 1030;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+.gCte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 50%;
+}
+.gCte h3 {
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.nmU {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mUyf {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50%;
+  gap: 1rem;
+}
+.mgVj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mgVj span {
+  font-weight: 600;
+  font-size: 14px;
+}
+.mgVj p {
+  margin-top: 5px;
+  font-weight: 500;
+}
+.gBqr {
+  margin: 1rem 0;
+  flex: 1 0 100%;
+}
+.gBqr ul {
+  flex-direction: column;
+}
+.gBqr li {
+  margin: 5px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.gBqr span {
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.bOOb {
+  margin: 0 auto 1rem;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.bOOb a,
+.bOOb button {
+  font-family: "Poppins", sans-serif !important;
+  color: #000;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4px 6px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.bOOb a:hover,
+.bOOb button:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 425.98px) {
+  .gCte,.mUyf,.gBqr {
+    flex: 0 0 100% !important;
+  }
+}

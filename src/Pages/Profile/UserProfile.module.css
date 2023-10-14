@@ -1,0 +1,11 @@
+.profile {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 880px) {
+  .profile {
+    grid-template-columns: 100%;
+  }
+}

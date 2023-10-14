@@ -1,0 +1,92 @@
+.slider {
+  margin: 0.3rem 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider .wrapper {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all ease;
+  will-change: transform;
+}
+.slider .arrows {
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: ease 0.3s all;
+  outline: none;
+  z-index: 5;
+}
+.slider .arrows.prev {
+  left: 5px;
+}
+.slider .arrows.prev:hover {
+  opacity: 0.7;
+  left: 0;
+}
+.slider .arrows.next {
+  right: 5px;
+}
+.slider .arrows.next:hover {
+  right: 0;
+  opacity: 0.7;
+}
+.slider .dots-container {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  bottom: 9px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.slider .dots-container li {
+  display: inline-block;
+  padding: 5px;
+}
+.slider .dots-container li.active button {
+  background-color: #00d8ff;
+}
+.slider .dots-container li button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border: none;
+}
+.slider .dots-container li button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.slider .each-slide {
+  width: 100%;
+  height: 400px;
+}
+
+.slider .each-slide img {
+  object-fit: contain;
+}
+
+.disabledel {
+  display: none !important;
+}
+
+@media  (pointer: coarse) {
+  .arrows.prev, .arrows.next {
+      display: none !important;
+  }
+}

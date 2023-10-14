@@ -1,0 +1,43 @@
+.form_group {
+  margin-bottom: 1rem;
+}
+.control_label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+.input_image_post {
+  margin: 0;
+}
+.OvrcU {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.ExBt_2 {
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ExBt_2 input:checked ~ .image_holder::after {
+  display: block;
+}
+.image_holder {
+  display: block;
+  cursor: pointer;
+  height: 120px;
+  width: 100%;
+}
+.image_holder::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(133, 43, 43, 0.288);
+}

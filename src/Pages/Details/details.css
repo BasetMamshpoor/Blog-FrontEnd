@@ -1,0 +1,104 @@
+.loading_holder {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(136, 164, 240);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+.postAuthor {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.pmibgt {
+  color: #000;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.postImg {
+  width: 100%;
+}
+.mySlide {
+  display: none;
+}
+.showSlide {
+  display: block;
+}
+.hideSlide {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.edited {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-size: 16px;
+}
+.aboutPost {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutPost p {
+  white-space: pre-line;
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+.aboutPost h4 {
+  overflow: hidden;
+}
+.postImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Hbci {
+  color: rgb(87, 152, 238);
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.2rem 0.5rem;
+}
+.postFooter {
+  display: flex;
+  align-items: center;
+  direction: ltr !important;
+  width: 100%;
+}
+.postFooter a {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(35, 118, 241);
+}
+
+.post_action {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.Like_post {
+  cursor: pointer;
+}
+.Like_post svg {
+  width: 24px;
+  height: 24px;
+}
+.liked {
+  fill: red;
+}

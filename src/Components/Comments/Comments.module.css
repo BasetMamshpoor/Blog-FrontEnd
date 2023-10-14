@@ -1,0 +1,78 @@
+.postComment {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.postComment h5 {
+  text-align: center;
+}
+.commentForm {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.comment {
+  position: relative;
+  padding: 1rem 1rem 0;
+  border: 1px solid rgb(182, 182, 182);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.DelComment {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  padding: 0 2px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #adadad;
+}
+.commentForm form {
+  display: flex;
+}
+.commentForm input {
+  flex-grow: 1;
+  outline: none;
+  background: #f1f1f1;
+  border: none;
+  padding: 0.3rem 0.5rem;
+}
+.commentForm button {
+  cursor: pointer;
+  border: none;
+  background: #000;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+.headerC p {
+  margin-bottom: 0.5rem;
+  color: rgb(134, 134, 134);
+}
+.bodyC p {
+  text-align: justify;
+}
+.csxop {
+  margin: 1rem 0 0.3rem;
+  font-size: 12px;
+  font-weight: 800;
+}
+.csxop span:first-child {
+  margin-right: 0.5rem;
+}
+.csxop span:last-child {
+  margin-left: 0.5rem;
+}
+.loadingComment img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.loadingComment {
+  margin: 0 auto;
+  width: 100px;
+}

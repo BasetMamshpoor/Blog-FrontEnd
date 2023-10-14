@@ -1,0 +1,40 @@
+.d-flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.alignCenter {
+  align-items: center;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 992px;
+}
+.showSlide {
+  display: block;
+}
+.hideSlide {
+  display: none;
+}
+.Like_post {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.Like_post span:last-child {
+  font-weight: 900;
+}
+.liked {
+  fill: red;
+}
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

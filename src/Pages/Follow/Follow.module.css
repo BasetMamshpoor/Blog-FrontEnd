@@ -1,0 +1,71 @@
+.wXFr {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(73, 73, 73, 0.589);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lGop {
+  background: #fff;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Bfou {
+  padding: 15px 10px;
+  display: flex;
+  background: #eee;
+  align-items: center;
+}
+.Bfou p {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+.Bfou button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  background: none;
+}
+.FollowList {
+  margin: 0;
+  padding: 1rem 0 1rem 1rem;
+  max-height: 30rem;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.FollowList li a {
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+}
+.FollowList li:first-child a {
+  border: none;
+}
+.FollowList span {
+  margin-left: 1rem;
+  flex-grow: 1;
+}
+.followImgProf {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+}

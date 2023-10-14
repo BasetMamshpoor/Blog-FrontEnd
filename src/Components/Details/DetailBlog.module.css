@@ -1,0 +1,150 @@
+.main_content {
+  overflow: hidden;
+  max-width: 450px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+}
+.main_gallery_wrapper {
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  flex-flow: column;
+}
+.flex_container {
+  display: flex;
+}
+.card_wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  flex-flow: column;
+}
+.card_header {
+  display: grid;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  align-items: center;
+  grid-template-columns: 10% 1fr auto;
+  grid-template-rows: minmax(0, 1fr);
+  height: 56.5px;
+}
+.header_img_container {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card_header_img {
+  width: 90%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.card_title {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 1rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.card_img_container {
+  width: 100%;
+}
+.card_data {
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem;
+  width: 100%;
+}
+.bold {
+  font-weight: bold;
+}
+.card_text {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+.title {
+  width: 100%;
+  font-weight: 900;
+  margin: 0.5rem 0;
+}
+
+.phWxoR {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.XsPzoY {
+  cursor: pointer;
+}
+.phWxoR input[type="checkbox"]:checked ~ .jWcoI {
+  display: block;
+}
+.jWcoI {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 0.5rem;
+  z-index: 10;
+}
+.jWcoI ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.jWcoI ul li {
+  font-size: 14px;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+.jWcoI ul li a {
+  width: 100%;
+  display: block;
+}
+.blogFooter {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.edited {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-style: italic;
+}
+.post_acions {
+  display: flex;
+  gap: 1rem;
+}
+.Kbyci {
+  margin-bottom: 0.8rem;
+}
+.Kbyci p {
+  white-space: pre-line;
+  text-align: justify;
+  display: -webkit-box;
+  overflow: hidden;
+}
+@media all and (max-width: 480px) {
+  .card_header_img {
+    width: 90%;
+  }
+  .card_wrapper {
+    border: none;
+  }
+}
