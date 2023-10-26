@@ -4,7 +4,7 @@ import Token from '../Functions/Token';
 import { useNavigate } from 'react-router-dom';
 import { useMemo } from 'react';
 
-const baseURL = 'http://192.168.1.101:8000'
+const baseURL = 'http://127.0.0.1:8000/'
 
 
 const useAxios = () => {

@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import axios from 'axios';
 import './Styles/global.css'
 
-axios.defaults.baseURL = 'http://192.168.1.101:8000'
+axios.defaults.baseURL = 'http://127.0.0.1:8000/'
 
 
 
