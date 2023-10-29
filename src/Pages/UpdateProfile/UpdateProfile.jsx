@@ -7,17 +7,19 @@ import Token from '../../Functions/Token';
 import useAxios from '../../Hooks/useAxios'
 import Cookies from 'js-cookie';
 import './updateprofile.css'
+import validation from '../../lib/validationUpdateProfile'
 
 const UpdateProfile = () => {
     const { user: token } = Token()
     const { state } = useLocation();
     const navigate = useNavigate();
     const imgPreview = useRef();
-    const [userInfo, setUserInfo] = useState()
+    const [userInfo, setUserInfo] = useState({})
     const [loading, setLoading] = useState(true)
     const [imagePath, setImagePath] = useState()
 
     const axios = useAxios()
+    const errors = validation(userInfo)
 
 
     useEffect(() => {
@@ -67,7 +69,6 @@ const UpdateProfile = () => {
                 navigate('/explore')
             } else navigate(`/user/${token.username}`)
         }).catch(err => {
-            console.log(err);
             toast.error(Object.values(err.response.data)[0][0])
         })
     }
@@ -127,7 +128,7 @@ const UpdateProfile = () => {
                                 <div className='mWmubF'>
                                     <label htmlFor="username" className="floatLabel">User Name</label>
                                     <input id="username" name="username" type="text" onChange={handleChange} value={userInfo.username} />
-                                    {/* <span>user name is not avalibale</span> */}
+                                    {errors.username && <span>{errors.username}</span>}
                                 </div>
                                 <div className='mWmubF'>
                                     <label htmlFor="firstname" className="floatLabel">First Name</label>
@@ -140,7 +141,7 @@ const UpdateProfile = () => {
                                 <div className='mWmubF'>
                                     <label htmlFor="Email" className="floatLabel">Email</label>
                                     <input id="Email" name="email" type="text" onChange={handleChange} value={userInfo.email} />
-                                    {/* <span>email format is wrong !</span> */}
+                                    {errors.email && <span>{errors.email}</span>}
                                 </div>
                                 <div className='mWmubF pb-1'>
                                     <button type="submit">Change Profile !</button>
