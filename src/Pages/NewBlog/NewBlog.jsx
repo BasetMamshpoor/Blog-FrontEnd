@@ -3,7 +3,6 @@ import { ToastContainer } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Token from '../../Functions/Token';
 import BlogForm from '../../Components/NewBlog/BlogForm';
-import style from './NewBlog.module.css'
 
 
 const NewBlog = () => {
@@ -49,8 +48,8 @@ const NewBlog = () => {
 
     return (
         <>
-            <div className={style.wQio}>
-                <div className={style.tab_pane} id="post-object-form">
+            <div className='mt-4 w-full h-full flex justify-center items-center mb-12'>
+                <div className='shadow-sm w-[40rem] h-auto p-8 bg-white rounded-10' id="post-object-form">
                     <BlogForm blogInfo={blogInfo} state={state} setBlogInfo={setBlogInfo} />
                 </div>
             </div>

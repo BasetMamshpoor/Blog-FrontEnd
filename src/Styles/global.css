@@ -38,3 +38,7 @@
     padding-right: 0;
   }
 }
+
+.transition-cus {
+  transition: all 0.3s ease;
+}

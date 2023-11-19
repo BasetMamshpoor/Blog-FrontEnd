@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import './details.css'
 import NotFound from '../NotFound/NotFound'
 import Loading from '../../images/200.gif'
 import DetailBlog from '../../Components/Details/DetailBlog';
@@ -41,7 +40,7 @@ const Details = () => {
 
     return (
         <>
-            {loading ? <div className="loading_holder"><div><img src={Loading} alt="" /></div></div> : post ?
+            {loading ? <div className='w-full justify-center flex items-center'><div><img src={Loading} alt="" /></div></div> : post ?
                 <div className='details'>
                     <div className="container">
                         <DetailBlog post={post} />

@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from './NotFound.module.css'
 
 const NotFound = ({ value }) => {
     return (
-        <div className={styles.notFound}>
-            <p className={styles.text}>sorry <span>{value}</span> page dosen't exist.</p>
+        <div className='flex items-center justify-center w-full min-h-[30vh]'>
+            <p className='text-3xl font-semibold font-mono'>sorry <span className='italic underline'>{value}</span> page dosen't exist.</p>
         </div>
     );
 };

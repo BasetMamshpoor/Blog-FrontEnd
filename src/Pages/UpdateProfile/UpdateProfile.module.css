@@ -1,0 +1,54 @@
+.mWmubF {
+  padding-bottom: 3.5rem;
+  position: relative;
+  width: 100%;
+}
+#QzoliOption:checked ~ .modalOption {
+  display: flex !important;
+}
+
+.mWmubF input[type="text"],
+.mWmubF input[type="password"] {
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  border-radius: 6px !important;
+  display: block;
+  width: 100%;
+  outline: none;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #adadad;
+  font-size: 1.6em;
+  padding: 0.8em 0.5em;
+  border-radius: 2px;
+}
+.mWmubF input[type="text"]:focus,
+.mWmubF input[type="password"]:focus {
+  background: #fff;
+}
+.mWmubF span {
+  text-transform: capitalize;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  border-radius: 10px;
+  font-size: 12px;
+  display: block;
+  background: #f9a5a5;
+  padding: 2px 8px;
+  color: #666;
+  font-weight: 600;
+}
+
+.mWmubF label.floatLabel {
+  top: -14px;
+  letter-spacing: 2px;
+  background-color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 15px;
+  color: #818181;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+}

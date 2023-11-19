@@ -4,7 +4,6 @@ import Loading from '../../images/200.gif'
 import { ToastContainer } from 'react-toastify';
 import Token from '../../Functions/Token'
 import Blog from '../../Components/Blog/Blog';
-import style from './Main.module.css'
 import useRequest from '../../Hooks/useRequest';
 
 
@@ -39,17 +38,17 @@ const Main = ({ type }) => {
                 />
             )
         }
-    }) : <div className={style.nopost}>There is no post!</div>
+    }) : <div className='text-xl tracking-widest font-semibold'>There is no post!</div>
 
 
     return (
         <>
-            <div className={style.main}>
+            <div className='mb-12'>
                 <div className='container'>
-                    <main className={style.blogs}>
-                        {loading ? <div className={style.loading}><img src={Loading} alt="" /></div> : Blogs}
+                    <main className='flex flex-col items-center gap-4 w-full'>
+                        {loading ? <div className='-mt-8 mx-auto w-[140]'><img src={Loading} alt="" /></div> : Blogs}
                     </main>
-                    {isFetching && !end && <div className={style.loading}><img src={loading} alt='loading' /></div>}
+                    {isFetching && !end && <div className='-mt-8 mx-auto w-[140]'><img src={loading} alt='loading' /></div>}
                 </div>
                 <ToastContainer />
             </div>

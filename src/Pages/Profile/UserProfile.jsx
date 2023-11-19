@@ -4,9 +4,6 @@ import Token from '../../Functions/Token';
 import UserNotFound from '../NotFound/UserNotFound'
 import User from '../../Components/Profile/User';
 import UserPosts from '../../Components/Profile/UserPosts';
-import style from './UserProfile.module.css'
-import jwtDecode from 'jwt-decode';
-import Cookies from 'js-cookie';
 
 
 const UserProfile = () => {
@@ -29,7 +26,7 @@ const UserProfile = () => {
         <>
             <div className='container'>
                 {user ?
-                    <div className={style.profile}>
+                    <div className='grid gap-8 md:grid-cols-2 grid-cols-1'>
                         <>
                             <User username={username} isMe={isMe} isExist={setUser} />
 
