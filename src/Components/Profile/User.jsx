@@ -4,7 +4,6 @@ import useAxios from '../../Hooks/useAxios';
 import userlogo from '../../images/Ei-user.svg'
 import Cookies from 'js-cookie';
 import Loading from '../../images/200.gif'
-import style from './User.module.css';
 
 const User = ({ isMe, isExist, username }) => {
     const axios = useAxios()
@@ -45,47 +44,47 @@ const User = ({ isMe, isExist, username }) => {
 
     return (
         <>
-            <div className={style.EzonU}>
-                <div className={style.prVk}>
-                    {loading ? <div style={{ width: '200px', height: '200px', margin: '0 auto' }}><img src={Loading} alt="" /></div> :
+            <div className='max-w-md w-full my-0 mx-auto'>
+                <div className='sticky top-32 z-50 flex items-center flex-wrap p-4 rounded-10 border shadow-md'>
+                    {loading ? <div className='w-[200px] h-[200px] my-0 mx-auto'><img src={Loading} alt="" /></div> :
                         <>
-                            <div className={style.gCte}>
-                                <div className={style.nmU}>
+                            <div className='flex flex-col items-center flex-grow w-full xs:w-1/2'>
+                                <div className='w-24 h-24 rounded-full overflow-hidden'>
                                     {user.profile_photo ?
                                         <img src={user.profile_photo} alt="" />
                                         :
                                         <img src={userlogo} alt="" />
                                     }
                                 </div>
-                                <h3>{user.username}</h3>
+                                <h3 className='mt-6 tracking-wide text-lg'>{user.username}</h3>
                             </div>
-                            <div className={style.mUyf}>
-                                <Link to={`/user/${username}/followers`} className={style.mgVj}>
-                                    <span>{user.followers}</span>
-                                    <p>Followers</p>
+                            <div className='my-4 mx-auto flex items-center justify-center w-full xs:w-1/2 gap-4'>
+                                <Link to={`/user/${username}/followers`} className='flex flex-col items-center'>
+                                    <span className='font-semibold text-sm'>{user.followers}</span>
+                                    <p className='mt-1 font-medium'>Followers</p>
                                 </Link>
-                                <Link to={`/user/${username}/following`} className={style.mgVj}>
-                                    <span>{user.following}</span>
-                                    <p>Following</p>
+                                <Link to={`/user/${username}/following`} className='flex flex-col items-center'>
+                                    <span className='font-semibold text-sm'>{user.following}</span>
+                                    <p className='mt-1 font-medium'>Following</p>
                                 </Link>
                             </div>
-                            <div className={style.gBqr}>
-                                <ul>
-                                    {user.first_name && <li><span>FirstName :</span> {user.first_name}</li>}
-                                    {user.last_name && <li><span>LastName :</span> {user.last_name}</li>}
-                                    {user.email && <li><span>Email :</span> {user.email}</li>}
+                            <div className='my-4 flex-grow w-full'>
+                                <ul className='flex-col'>
+                                    {user.first_name && <li className='my-1 text-sm tracking-wider w-full'><span className='font-black tracking-wider capitalize mr-2 '>FirstName :</span> {user.first_name}</li>}
+                                    {user.last_name && <li className='my-1 text-sm tracking-wider w-full'><span className='font-black tracking-wider capitalize mr-2 '>LastName :</span> {user.last_name}</li>}
+                                    {user.email && <li className='my-1 text-sm tracking-wider w-full'><span className='font-black tracking-wider capitalize mr-2 '>Email :</span> {user.email}</li>}
                                 </ul>
                             </div>
-                            <div className={style.bOOb}>
+                            <div className='flex items-center justify-center w-full mx-auto mb-4 gap-4'>
                                 {
                                     isMe ?
                                         <>
-                                            <Link to={`/edit-profile`} state={user}>Edit Profile</Link>
-                                            <button onClick={handleLogout}>Log out</button>
+                                            <Link className='transition-cus outline-none bg-transparent border text-black py-1 px-2 tracking-wider rounded-md cursor-pointer hover:text-white hover:bg-gray-400' to={`/edit-profile`} state={user}>Edit Profile</Link>
+                                            <button className='transition-cus outline-none bg-transparent border text-black py-1 px-2 tracking-wider rounded-md cursor-pointer hover:text-white hover:bg-gray-400' onClick={handleLogout}>Log out</button>
                                         </>
                                         :
                                         <>
-                                            <button onClick={handleFollow}>{user.status_follow ? 'unFollow' : 'follow'}</button>
+                                            <button className='transition-cus outline-none bg-transparent border text-black py-1 px-2 tracking-wider rounded-md cursor-pointer hover:text-white hover:bg-gray-400' onClick={handleFollow}>{user.status_follow ? 'unFollow' : 'follow'}</button>
                                             <button disabled>message</button>
                                         </>
                                 }

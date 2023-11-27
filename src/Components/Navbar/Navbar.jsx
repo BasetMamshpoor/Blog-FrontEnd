@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <section className="shadow-md bg-white border border-[#eee] sticky top-0 mx-auto mb-8 w-full md:py-4 py-2 px-0 z-[9999]">
+            <section className="shadow-md bg-white border border-[#eee] sticky md:top-0 top-[95%] mx-auto mb-8 w-full md:py-4 py-2 px-0 z-[9999]">
                 <div className="container">
                     <nav className='max-w-screen-2xl mt-0 mx-auto'>
                         <ul className="flex items-center justify-evenly p-0 m-0">

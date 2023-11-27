@@ -26,7 +26,7 @@ const UserProfile = () => {
         <>
             <div className='container'>
                 {user ?
-                    <div className='grid gap-8 md:grid-cols-2 grid-cols-1'>
+                    <div className='grid gap-8 md:grid-cols-2 grid-cols-1 md:m-0 -m-12'>
                         <>
                             <User username={username} isMe={isMe} isExist={setUser} />
 

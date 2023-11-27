@@ -20,18 +20,6 @@
 .hideSlide {
   display: none;
 }
-.Like_post {
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.Like_post span:last-child {
-  font-weight: 900;
-}
-.liked {
-  fill: red;
-}
 @media (max-width: 480px) {
   .container {
     padding-left: 0;
